@@ -30,6 +30,7 @@ struct AlfaView: View {
                 .navigationDestination(for: MainRoute.self) { route in
                     switch route {
                     case .beta: BetaView.builder()
+                    case .gamma: GammaView.builder()
                     }
                 }
         }
@@ -40,7 +41,7 @@ struct AlfaView: View {
     // MARK: - Accessory Views
     
     private var contentView: some View {
-        VStack(spacing: 40) {
+        VStack(spacing: 20) {
             Spacer(minLength: .zero)
             
             Text(String(viewModel.counter))
@@ -59,6 +60,13 @@ struct AlfaView: View {
             
             Button(action: { mainNavigationState.navigate(to: .beta) }, label: {
                 Text("GO TO BETA")
+            })
+            
+            Button(action: {
+                mainNavigationState.navigate(to: .beta)
+                mainNavigationState.navigate(to: .gamma)
+            }, label: {
+                Text("GO TO GAMMA")
             })
         }
         .font(.title)

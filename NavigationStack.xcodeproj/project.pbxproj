@@ -22,6 +22,8 @@
 		9B5D67542D3EE58100F14B86 /* Task+AnyCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D67532D3EE58100F14B86 /* Task+AnyCancellable.swift */; };
 		9B5D67572D3EE5AE00F14B86 /* View+Lifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D67562D3EE5AE00F14B86 /* View+Lifecycle.swift */; };
 		9B5D675A2D3EE5E500F14B86 /* UIApplication+KeyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D67592D3EE5E500F14B86 /* UIApplication+KeyWindow.swift */; };
+		9B5D675D2D3EE66000F14B86 /* GammaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D675C2D3EE66000F14B86 /* GammaView.swift */; };
+		9B5D675F2D3EE68B00F14B86 /* GammaView+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5D675E2D3EE68B00F14B86 /* GammaView+Builder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		9B5D67532D3EE58100F14B86 /* Task+AnyCancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+AnyCancellable.swift"; sourceTree = "<group>"; };
 		9B5D67562D3EE5AE00F14B86 /* View+Lifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Lifecycle.swift"; sourceTree = "<group>"; };
 		9B5D67592D3EE5E500F14B86 /* UIApplication+KeyWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+KeyWindow.swift"; sourceTree = "<group>"; };
+		9B5D675C2D3EE66000F14B86 /* GammaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GammaView.swift; sourceTree = "<group>"; };
+		9B5D675E2D3EE68B00F14B86 /* GammaView+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GammaView+Builder.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 			children = (
 				9B4982722D3D6C5C009725A6 /* AlfaView */,
 				9B4982732D3D6C62009725A6 /* BetaView */,
+				9B5D675B2D3EE65100F14B86 /* GammaView */,
 				9B4982782D3D6CF5009725A6 /* MainViewModel.swift */,
 			);
 			path = Main;
@@ -228,6 +233,15 @@
 			path = UIApplication;
 			sourceTree = "<group>";
 		};
+		9B5D675B2D3EE65100F14B86 /* GammaView */ = {
+			isa = PBXGroup;
+			children = (
+				9B5D675C2D3EE66000F14B86 /* GammaView.swift */,
+				9B5D675E2D3EE68B00F14B86 /* GammaView+Builder.swift */,
+			);
+			path = GammaView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -304,8 +318,10 @@
 				9B4982822D3D6EDF009725A6 /* BetaView+Builder.swift in Sources */,
 				9B4982752D3D6C7B009725A6 /* AlfaView.swift in Sources */,
 				9B5D674F2D3EE52C00F14B86 /* BaseUIModel.swift in Sources */,
+				9B5D675D2D3EE66000F14B86 /* GammaView.swift in Sources */,
 				9B4982802D3D6E53009725A6 /* AlfaView+Builder.swift in Sources */,
 				9B5D67542D3EE58100F14B86 /* Task+AnyCancellable.swift in Sources */,
+				9B5D675F2D3EE68B00F14B86 /* GammaView+Builder.swift in Sources */,
 				9B5D675A2D3EE5E500F14B86 /* UIApplication+KeyWindow.swift in Sources */,
 				9B5D674D2D3EE50700F14B86 /* BaseViewModel.swift in Sources */,
 				9B4982852D3D6FD2009725A6 /* NavigationState.swift in Sources */,

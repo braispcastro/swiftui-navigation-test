@@ -1,13 +1,13 @@
 //
-//  BetaView.swift
+//  GammaView.swift
 //  NavigationStack
 //
-//  Created by Brais Castro on 19/1/25.
+//  Created by Brais Castro on 20/1/25.
 //
 
 import SwiftUI
 
-struct BetaView: View {
+struct GammaView: View {
     
     // MARK: - Private Methods
     
@@ -21,7 +21,7 @@ struct BetaView: View {
         Color(uiColor: .systemBackground)
             .ignoresSafeArea()
             .overlay(contentView)
-            .navigationTitle("BetaView")
+            .navigationTitle("GammaView")
     }
     
     
@@ -44,10 +44,6 @@ struct BetaView: View {
             }
             
             Spacer(minLength: .zero)
-            
-            Button(action: { mainNavigationState.navigate(to: .gamma) }, label: {
-                Text("GO TO GAMMA")
-            })
             
             Button(action: { mainNavigationState.dismiss() }, label: {
                 Text("BACK")

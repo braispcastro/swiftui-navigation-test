@@ -9,6 +9,7 @@ import Foundation
 
 enum MainRoute: Hashable {
     case beta
+    case gamma
 }
 
 final class MainNavigationState: NavigationState<MainRoute> {}
