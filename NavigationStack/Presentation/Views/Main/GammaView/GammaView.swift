@@ -12,7 +12,6 @@ struct GammaView: View {
     // MARK: - Private Methods
     
     @EnvironmentObject private var viewModel: MainViewModel
-    @EnvironmentObject private var mainNavigationState: MainNavigationState
     
     
     // MARK: - Body
@@ -45,13 +44,9 @@ struct GammaView: View {
             
             Spacer(minLength: .zero)
             
-            Button(action: { mainNavigationState.dismiss() }, label: {
-                Text("BACK")
-            })
+            Button(action: viewModel.dismiss) { Text("BACK") }
             
-            Button(action: { mainNavigationState.clear() }, label: {
-                Text("CLOSE")
-            })
+            Button(action: viewModel.clear) { Text("CLOSE") }
         }
         .font(.title)
     }

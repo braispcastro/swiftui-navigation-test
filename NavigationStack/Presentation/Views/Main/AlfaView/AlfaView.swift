@@ -35,6 +35,7 @@ struct AlfaView: View {
                 }
         }
         .environmentObject(viewModel)
+        .task { viewModel.setupNavigation(mainNavigationState) }
     }
     
     
@@ -63,8 +64,8 @@ struct AlfaView: View {
             })
             
             Button(action: {
-                mainNavigationState.navigate(to: .beta)
-                mainNavigationState.navigate(to: .gamma)
+                viewModel.navigate(to: .beta)
+                viewModel.navigate(to: .gamma)
             }, label: {
                 Text("GO TO GAMMA")
             })

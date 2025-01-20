@@ -12,7 +12,6 @@ struct BetaView: View {
     // MARK: - Private Methods
     
     @EnvironmentObject private var viewModel: MainViewModel
-    @EnvironmentObject private var mainNavigationState: MainNavigationState
     
     
     // MARK: - Body
@@ -45,17 +44,13 @@ struct BetaView: View {
             
             Spacer(minLength: .zero)
             
-            Button(action: { mainNavigationState.navigate(to: .gamma) }, label: {
+            Button(action: { viewModel.navigate(to: .gamma) }, label: {
                 Text("GO TO GAMMA")
             })
             
-            Button(action: { mainNavigationState.dismiss() }, label: {
-                Text("BACK")
-            })
+            Button(action: viewModel.dismiss) { Text("BACK") }
             
-            Button(action: { mainNavigationState.clear() }, label: {
-                Text("CLOSE")
-            })
+            Button(action: viewModel.clear) { Text("CLOSE") }
         }
         .font(.title)
     }
