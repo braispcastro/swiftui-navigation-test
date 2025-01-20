@@ -9,13 +9,9 @@ import SwiftUI
 
 struct BetaView: View {
     
-    // MARK: - Public Methods
-    
-    @ObservedObject var viewModel: MainViewModel
-    
-    
     // MARK: - Private Methods
     
+    @EnvironmentObject private var viewModel: MainViewModel
     @EnvironmentObject private var mainNavigationState: MainNavigationState
     
     
@@ -58,5 +54,5 @@ struct BetaView: View {
 }
 
 #Preview {
-    BetaView.builder(viewModel: MainViewModel())
+    BetaView.builder()
 }

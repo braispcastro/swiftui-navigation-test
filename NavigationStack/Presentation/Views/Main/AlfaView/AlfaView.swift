@@ -29,10 +29,11 @@ struct AlfaView: View {
                 .navigationTitle("AlphaView")
                 .navigationDestination(for: MainRoute.self) { route in
                     switch route {
-                    case .beta: BetaView.builder(viewModel: viewModel)
+                    case .beta: BetaView.builder()
                     }
                 }
         }
+        .environmentObject(viewModel)
     }
     
     

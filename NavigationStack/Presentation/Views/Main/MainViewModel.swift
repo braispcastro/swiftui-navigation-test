@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class MainViewModel: ObservableObject {
+final class MainViewModel: BaseViewModel {
     
     // MARK: - Public Properties
     
